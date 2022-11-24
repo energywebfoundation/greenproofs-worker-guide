@@ -19,7 +19,7 @@ To create a virtual machine in your cloud provider. Ensure the virtual machine m
 
 ## Deployment Guide
 
-Clone the following repository - [(https://github.com/energywebfoundation/greenproofs-worker-guide)
+Clone this repository
 
 It contains the guide and files required to run the worker image.
 
