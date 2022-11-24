@@ -19,7 +19,8 @@ To create a virtual machine in your cloud provider. Ensure the virtual machine m
 
 ## Deployment Guide
 
-Clone this repository
+Clone this [repository](https://github.com/energywebfoundation/greenproofs-worker-guide)
+
 
 It contains the guide and files required to run the worker image.
 
@@ -36,6 +37,14 @@ Once connected to the VM. Follow the steps to run the container image.
 `docker -v`
 
 `docker-compose -v`
+
+### Add Docker to Sudo Group
+
+
+```
+sudo groupadd docker
+sudo usermod -aG docker $user
+```
 
 #### Application setup
 
