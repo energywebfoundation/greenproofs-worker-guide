@@ -23,7 +23,7 @@ It contains the guide and files required to run the worker image.
 
 ## Deploying Worker Image 
 
-Once connected to the VM. Follow the steps to run the container image.
+Once connected to the VM. Follow the steps below to run the container image.
 
 #### Install docker
 
@@ -35,17 +35,19 @@ Once connected to the VM. Follow the steps to run the container image.
 
 `docker-compose -v`
 
-### Add Docker to Sudo Group
+### Add Docker to sudo group
 
 
 ```
 sudo groupadd docker
-sudo usermod -aG docker $user
+sudo usermod -aG docker $USER
 ```
 
-#### Application setup
+You can read more about this [here](https://docs.docker.com/engine/install/linux-postinstall/)
 
-Once done, ensure to the **.env** file contains all environment variables required in the same directory as the **docker-compose.yml** file.
+### Application setup
+
+Once done, ensure the **.env** file is in the same directory as the **docker-compose.yml** file and contains all environment variables required. 
 
 Finally, run the command
 
