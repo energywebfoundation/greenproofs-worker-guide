@@ -1,11 +1,8 @@
-# Deploying Greenproofs Worker Container on Virtual Machine
+# Deploying Greenproofs Worker Container on a Virtual Machine
 
+The containerized worker node and can be run on a virtual machine with Docker installed
 
-This covers creating a virtual machine Azure cloud environment to run the Greenproofs worker node.
-
-The worker node is containerized and can be run on a virtual machine.
-
-## Requirement
+## Minimun Requirement
 
 -   CPU: 2 vCPUs
 -   Memory: 4 GB
@@ -15,7 +12,7 @@ The worker node is containerized and can be run on a virtual machine.
 
 ## Create a Virtual machine
 
-To create a virtual machine in your cloud provider. Ensure the virtual machine matches the minimum requirements listed in the above section.
+Create a virtual machine in your cloud provider of choice with the minimum requirements listed in the above section.
 
 ## Deployment Guide
 
@@ -24,7 +21,7 @@ Clone this [repository](https://github.com/energywebfoundation/greenproofs-worke
 
 It contains the guide and files required to run the worker image.
 
-## Deploying Worker Image to Virtual Machine
+## Deploying Worker Image 
 
 Once connected to the VM. Follow the steps to run the container image.
 
