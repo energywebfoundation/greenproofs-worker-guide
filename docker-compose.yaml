@@ -1,13 +1,13 @@
 version: '3.8'
 services:
   registry:
-    image: greenproofsprivatecontainerregistry.azurecr.io/greenproof-quinbrook-app:latest
+    image: greenproofsprivatecontainerregistry.azurecr.io/greenproof-worker-app:latest
     ports:
       - "3030:3030"
     volumes:
       - /tmp:/tmp # persistent storage
     environment:
-- WORKER_BLOCKCHAIN_ADDRESS=${WORKER_0_ADDRESS}
+      - WORKER_BLOCKCHAIN_ADDRESS=${WORKER_0_ADDRESS}
       - WORKER_PRIVATE_KEY=${WORKER_0_PRIVATE_KEY}
       - DDHUB_URL=${DDHUB_URL_DOCKER}
       - DIAMOND_CONTRACT_ADDRESS=${DIAMOND_CONTRACT_ADDRESS}
